@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>BANK</title>
+  </head>
+  <body>
+    <h2 class="text-lg-center p-3">Bank Statement</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h4>Total Deposit</h4>
+          <h5 >$<span id="deposit-total">00</span></h5></h5>
+        </div>
+        <div class="col">
+          <h4>Total Withdraw</h4>
+          <h5>$<span id="withdraw-total">00</span></h5>
+        </div>
+        <div class="col">
+          <h4>Total Balance</h4>
+          <h5>$ <span id="balance-total">1000</span></h5>
+        </div>
+      </div>
+    </div>
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col">
+          <label for="formGroupExampleInput" class="form-label"
+            >Deposit Here</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="deposit-input"
+            placeholder="Deposit Money here"
+          />
+          <button type="button" class="btn btn-warning" id="deposit-button">Deposit</button>
+        </div>
+        <div class="col">
+          <label for="Withdraw" class="form-label">Withdraw here</label>
+          <input
+            type="text"
+            class="form-control"
+            id="withdraw-input"
+            placeholder="Withdraw Money here"
+          />
+          <button type="button" class="btn btn-warning" id="withdraw-button">Withdraw</button>
+        </div>
+      </div>
+    </div>
+    
+    
+    <script src="/JS/banking.js"></script>
+  </body>
+</html>
